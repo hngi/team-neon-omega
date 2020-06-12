@@ -68,7 +68,12 @@ body {
   color: #02ce77;
   border-bottom: 5px solid #02ce77;
 }
+
 .toggle-btn-container {
+  display: none;
+}
+
+.close-mobile-nav-btn {
   display: none;
 }
 
@@ -78,7 +83,6 @@ body {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   justify-items: start;
-  align-items: center;
   padding: 8rem 10rem;
 }
 
@@ -203,4 +207,146 @@ body {
   font-weight: 600;
   text-transform: capitalize;
   font-size: 2rem;
+}
+
+@media screen and (max-width: 1024px) {
+  .header-navbar {
+    padding: 0 7rem;
+  }
+
+  .footer-container {
+    padding: 8rem 6rem;
+  }
+}
+
+@media screen and (max-width: 880px) {
+  .footer-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    padding: 8rem 5rem;
+    grid-gap: 5rem;
+  }
+}
+
+@media screen and (min-width: 791px) {
+  .navbar-nav {
+    display: flex !important;
+  }
+
+  .close-mobile-nav-btn {
+    display: none !important;
+  }
+}
+
+@media screen and (max-width: 790px) {
+  .navbar-nav {
+    display: none;
+  }
+
+  .header-navbar {
+    padding: 1rem 5rem;
+  }
+
+  .toggle-btn-container {
+    display: flex;
+    align-items: center;
+  }
+
+  .toggle-btn-container .toggle-btn {
+    background-color: #38a2f7;
+    border: 0;
+    height: 4rem;
+    width: 4rem;
+    border-radius: 100%;
+    -webkit-border-radius: 100%;
+    -moz-border-radius: 100%;
+    -ms-border-radius: 100%;
+    -o-border-radius: 100%;
+  }
+
+  .toggle-btn-container .toggle-btn:focus {
+    outline: 0;
+  }
+
+  .toggle-btn-container .toggle-btn i {
+    font-size: 2rem;
+    color: #ffffff;
+  }
+
+  .navbar-nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    background-color: rgba(10, 25, 56, 0.95);
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .nav-ul {
+    flex-direction: column;
+    align-items: flex-start !important;
+  }
+
+  .nav-link {
+    padding: 0.5rem 0;
+    color: #ffffff;
+    font-size: 2.5rem;
+  }
+
+  .nav-list:not(:last-child) {
+    margin-bottom: 3rem;
+  }
+
+  .close-mobile-nav-btn {
+    display: flex;
+    position: fixed;
+    top: 2rem;
+    right: 4rem;
+    z-index: 99;
+  }
+
+  .close-btn {
+    height: 4rem;
+    width: 4rem;
+    background-color: #02ce77;
+    border-radius: 100%;
+    -webkit-border-radius: 100%;
+    -moz-border-radius: 100%;
+    -ms-border-radius: 100%;
+    -o-border-radius: 100%;
+  }
+
+  .close-btn i {
+    font-size: 2rem;
+    color: #fff;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .footer-container {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    padding: 5rem 3rem;
+  }
+
+  .navigation-footer,
+  .about-footer,
+  .hotels-enquiries,
+  .get-the-app-footer {
+    align-self: flex-start;
+    justify-self: flex-start;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .header-navbar {
+    padding: 1rem;
+  }
+
+  .footer-container {
+    padding: 5rem 1rem;
+  }
 }
