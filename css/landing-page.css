@@ -430,3 +430,94 @@ svg {
 	position: relative;
 	right: 6em;
 }
+
+#stories {
+	margin-top: 20em;
+}
+.stories-wrapper {
+	display: flex;
+	justify-content: space-around;
+	padding: 2em;
+	width: 90%;
+	margin: 0 auto;
+}
+
+.stories-header h2 {
+	font-family: Eksell Display;
+	font-style: normal;
+	font-weight: 550;
+	font-size: 72px;
+	line-height: 86px;
+	color: #2B2B2B;
+	margin-top: 0.2em;
+}
+
+.stories-right {
+	display: flex;
+	width: 50%;
+	margin: 0 auto;
+}
+
+.stories-text {
+	margin-left: 2em;
+	margin-top: 1em;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	padding-bottom: 1em;
+}
+
+.stories-text h3 {
+	font-family: Cera Pro;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 24px;
+	line-height: 30px;
+	color: #2B2B2B;
+}
+
+.stories-text p:nth-child(2) {
+	font-family: Cera Pro;
+	font-style: normal;
+	font-weight: 300;
+	font-size: 15px;
+	line-height: 19px;
+	color: #2B2B2B;
+}
+
+.stories-text p {
+	font-family: Cera Pro;
+	font-style: normal;
+	font-weight: 300;
+	font-size: 18px;
+	line-height: 23px;
+	letter-spacing: 0.03em;
+	color: #2B2B2B;
+}
+
+.stories-text a {
+	font-family: Cera Pro;
+	font-style: normal;
+	font-weight: 500;
+	font-size: 18px;
+	line-height: 23px;
+	letter-spacing: 0.03em;
+	color: #02CE77;
+}
+
+a {
+	text-decoration: none;
+}
+
+.stories-header a {
+	font-family: Cera Pro;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 24px;
+	line-height: 30px;
+	background: #02CE77;
+	color: #FFFFFF;
+	padding: 0.6em;
+	position: relative;
+	top: 1.5em;
+}
