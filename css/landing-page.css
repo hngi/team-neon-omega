@@ -2,6 +2,7 @@
 	padding: 0;
 	margin: 0;
 	box-sizing: border-box;
+	/*border: 2px solid red;*/
 }
 
 @font-face {
@@ -17,6 +18,7 @@
 body {
 	background: #e5e5e5;
 	overflow-x: hidden;
+
 }
 
 #banner {
@@ -217,17 +219,18 @@ svg {
 .explore-wrapper {
 	position: relative;
 	top: 0;
-	padding-left: 6em;
+	padding: 2em;
 }
 
 .explore-wrapper::before {
 	content: "";
 	width: 100%;
-	height: 11vh;
+	height: 12vh;
 	background: #e5e5e5;
 	position: relative;
 	display: block;
-	bottom: 20vh;
+	bottom: 26vh;
+	margin-left: 2em;
 }
 
 #explore h2 {
@@ -243,48 +246,84 @@ svg {
 
 .resort-views {
 	display: grid;
-	grid-template-columns: 1fr 1fr 1fr 1fr;
+	grid-template-columns: 1fr 1fr;
 	grid-template-rows: 1fr 1fr;
 	grid-gap: 10px;
 	position: relative;
 	top: -2em;
+	width: 100%;
 }
 
 .view1 {
 	grid-column: 1/2;
 	grid-row: 1/3;
-	height: 80%;
 	text-align: center;
 }
 
 .view2 {
-	grid-column: 2/5;
+	grid-column: 2/4;
 	grid-row: 1/2;
 }
 
 .view3 {
 	grid-column: 2/3;
 	grid-row: 2/3;
-	
-	
+}
+
+.view4 {
+	grid-column: 3/4;
+	grid-row: 2/3;
 }
 
 .view3,
 .view4 {
 	position: relative;
-	top: -6em;
+	
 }
 
 .resort-view {
-	justify-self: center;
+	justify-self: start;
+	position: relative;
+	width: 100%;
 }
 
 .view2 {
 	justify-self: start;
+	width: 100%;
 }
 
-.view1 img {
+
+
+.resort-view img {
 	height: 100%;
+	width: 100%;
+}
+
+.resort-view p {
+	position: absolute;
+	bottom: 2em;
+	font-family: Cera Pro;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 25px;
+	line-height: 31px;
+	color: #FFFFFF;
+}
+
+p.experience {
+	width: 50%;
+	font-family: Cera Pro;
+	font-style: normal;
+	font-weight: 500;
+	font-size: 18px;
+	line-height: 23px;
+	letter-spacing: 0.03em;
+	color: #FFFFFF;
+	right: 1em;
+}
+
+.resort-view:nth-child(n + 2) p {
+	margin-left: 1em;
 }
 
 .testimonial-wrapper {
@@ -365,7 +404,7 @@ svg {
 	color: rgba(255, 255, 255, 0.4);
 }
 
-.quote:last-child {
+.quote:nth-last-child(2) {
 	float: right;
 	margin-right: 0.1em;
 	margin-top: 0.2em;
@@ -390,7 +429,7 @@ svg {
 	display: grid;
 	grid-template-columns: 1fr 1fr 1fr;
 	position: relative;
-	left: 6em;
+	left: 4em;
 	top: 8em;
 	width: 80%;
 	margin: 2em auto 0 auto;
