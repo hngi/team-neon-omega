@@ -1,0 +1,158 @@
+@import url(https://weloveiconfonts.com/api/?family=entypo);
+body, html {
+    padding: 0;
+    margin: 0;
+}
+[class*="entypo-"]:before {
+    font-family: 'entypo', sans-serif;
+    color: #02CE77 !important;
+    float: right;
+}
+.main {
+    padding-left: 5%;
+    padding-right: 5%;
+}
+.banner {
+    background-image:linear-gradient(0deg, rgba(0, 0, 0, 0.38), rgba(0, 0, 0, 0.38)), url('../images/Rectangle.png');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding-top:  172px;
+    padding-bottom: 200px;
+}
+.banner h1 {
+    font-size: 52px;
+    line-height: 86px;
+    color: #FFFFFF;
+    margin-left: 162px;
+}
+.rooms {
+    margin: 40px 162px 130px
+}
+.rooms h2 {
+    margin-bottom: 70px;
+    font-size: 42px;
+}
+.room-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    gap: 50px;
+}
+.room {
+    position: relative;
+    height: 500px;
+    min-width: 35%;
+}
+.room img {
+    width: 100%;
+    min-height: 200px;
+}
+.room1 {
+    background-image: url('../images/room1.png');
+    background-size:cover;    
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.room2 {
+    background-image: url('../images/room2.png');
+    background-size:cover;    
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.room3 {
+    background-image: url('../images/room3.png');
+    background-size:cover;    
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.room4 {
+    background-image: url('../images/room4.png');
+    background-size:cover;    
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.room5 {
+    background-image: url('../images/room5.png');
+    background-size:cover;    
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.room6 {
+    background-image: url('../images/room6.png');
+    background-size:cover;    
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.room-rate {
+    position: absolute;
+    bottom:0;
+    background-color: #ffff;
+    opacity: 90%;
+    width: 100%;
+    margin: 0;
+    padding: 20px 0 30px;
+}
+.room-rate .price {
+    font-weight: bold;
+    font-size: 38px;
+    font-style: normal !important;
+    color: #02CE77;
+}
+.room-rate h4 {
+    font-size: 18px;
+    color: #2B2B2B;
+    margin-bottom: 10px;
+}
+.room-rate span {
+    font-weight: 500;
+    font-size: 16px;
+    color: #2B2B2B;
+}
+.room-rate p {
+    font-weight: 500;
+    font-size: 16px;
+    color: #2B2B2B;
+}
+.room-rate .price, h4, p {
+    margin :0;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+.room-rate p, span {
+    font-style: italic;
+} 
+
+/* Media query */
+@media (max-width: 831px) {
+    .banner h1 {
+        margin-left: 100px;
+    }
+    .rooms h2 {
+        font-size: 35px;
+    }
+    .rooms {
+        margin: 40px 50px 130px;
+    }
+}
+@media (max-width: 530px) {
+    .banner h1 {
+        margin:0 auto;
+        text-align: center;
+    }
+    .rooms h2 {
+        font-size: 35px;
+        text-align: center;
+    }
+    .rooms {
+        margin: 40px 20px 130px;
+    }
+}
+@media (max-width: 530px) {
+    .rooms {
+        margin: 40px 20px 130px;
+    }
+    .room-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    }
+}
