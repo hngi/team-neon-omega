@@ -156,3 +156,112 @@ body, html {
         grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     }
 }
+
+
+.image-container {
+    width: 100vw;
+    height: 458px;
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.33), rgba(0, 0, 0, 0.33)), url("../images/Rectangle41.png");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 0 15rem;
+    display: flex;
+    align-items: center;
+}
+.image-container h1 {
+    color: #fff;
+    font-weight: 550;
+    font-size: 72px;
+    line-height: 86px;
+}
+.services-container{
+    padding: 3rem 15rem;
+}
+.services-container h2 {
+    font-size: 48px;
+    line-height: 58px;
+    color: #2B2B2B;
+    font-weight: 550;
+}
+.services-container__items {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin: 3rem 0;
+    grid-gap: 2rem;
+}
+.services-container__item {
+    height: 385px;
+    box-shadow: 0px 4px 10px #E5E5E5;
+    position: relative;
+}
+.services-container__item .services-container__item--text-box {
+    width: 100%;
+    height: 94px;
+    background: rgba(255, 255, 255, 0.91);
+    bottom: 0;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.services-container__item .services-container__item--text-box p {
+    font-weight: 500;
+    font-size: 25px;
+    line-height: 31px;
+    color: #2B2B2B;
+}
+.services__fitness {
+    background: url("../images/Rectangle47.png");
+    background-position: right;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.services__parking {
+    background: url("../images/Rectangle48.png");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.services__conference {
+    background: url("../images/Rectangle49.png");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.services__hall {
+    background: url("../images/Rectangle50.png");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.services__spa {
+    background: url("../images/Rectangle51.png");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.services__golf {
+    background: url("../images/Rectangle52.png");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.services__transport {
+    background: url("../images/Rectangle53.png");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.services__laundry {
+    background: url("../images/Rectangle54.png");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.services__tennis {
+    background: url("../images/Rectangle55.png");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
