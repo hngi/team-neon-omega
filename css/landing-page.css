@@ -121,7 +121,6 @@ body, html {
 .room-rate p, span {
     font-style: italic;
 } 
-
 /* Media query */
 @media (max-width: 831px) {
     .banner h1 {
